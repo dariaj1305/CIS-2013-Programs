@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Hello World</title>
+    <script src="hello.js"></script>
+</head>
+
+<body>
+    <h1 align="center">Hi!</h1>
+    <img style="margin:0px auto;display:block" src="<iframe src="https://media.giphy.com/media/KHhs4BXpy5dba/giphy.gif?cid=ecf05e47ccxzbwcm61hoxtk4ou51d504gok3wi35ug6m36cp&rid=giphy.gif&ct=g"/>
+    <h2 align="center">My name is Daria...</h2>
+    <br>
+   	<label>&nbsp;</label>
+	<div style="text-align:center">  
+        <input type="button" id="click" value="Click me!!"/>  
+    </div>  
+    <br>
+</body>
+</html>
