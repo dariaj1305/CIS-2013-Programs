@@ -19,7 +19,9 @@ var intLoanTerm = parseInt($("loan_length").value);
 var floatTotalCost = parseFloat(floatMonthlyPayment * intLoanTerm);
 var floatTotalCost= $("total_cost").value;
 
-window.onload = product
+window.onload = function() {
+    alert("hello!");
+}
 {
     $("loan_length").value = "";
     $("total_cost").value = "";
