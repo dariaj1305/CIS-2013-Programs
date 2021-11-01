@@ -5,7 +5,6 @@ var $ = function (id)
 
 var do_it = function ()
 {
-
 var floatRectWidth = parseFloat($("rect_width").value);
 var floatRectHeight = parseFloat($("rect_height").value);
 var floatTriSide1 = parseFloat($("tri_side1").value);
