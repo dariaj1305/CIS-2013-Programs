@@ -23,13 +23,6 @@ p {
 
 }
 
-.thin-black-border {
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
 label {
     display: block;
     width: 30em;
