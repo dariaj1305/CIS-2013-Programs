@@ -27,7 +27,7 @@ var passwordCheckOld = function ()
     if (stringPassword === arrayBadPasswords[i])
     {
         stringOutput = "Your Password does not appear to be strong enough. Try again";
-        break;
+    
     }
    }
 }
