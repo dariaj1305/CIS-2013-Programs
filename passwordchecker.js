@@ -26,7 +26,7 @@ var passwordCheckOld = function ()
    {
     if (stringPassword === arrayBadPasswords[i])
     {
-        stringOutput = "Your Password does not appear to be strong enough. Try again";
+        stringOutput = "Your Password does not appear to be strong enough. Please try again!";
     
     }
    }
@@ -38,7 +38,7 @@ if (stringOutput != "")
 }
  else
  {
-   $("output").value= "This password is strong and works. Good job.";
+   $("output").value= "This password is strong and works. Awesome!";
  }
 };
 // Sends it to DOM
