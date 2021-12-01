@@ -44,7 +44,7 @@ if (stringOutput != "")
 // Sends it to DOM
 window.onload = function ()
 {
-   $("password").value = "";
+   // $("password").value = "";
    $("password").focus();
    $("check_password").onclick = passwordCheckOld;
 };
