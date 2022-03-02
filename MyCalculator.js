@@ -1,4 +1,3 @@
-
 var $ = function(id) {
     return document.getElementById(id);
 };
@@ -11,8 +10,12 @@ var $ = function(id) {
         var floatExponent;
         var floatBase;
 
-       intMenuChoice = parseInt(prompt("Please enter a number 1 to 7 Menu:\n1 Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exponent\n6. Mean\n7. Quit"));
+     intMenuChoice = parseInt(prompt("Please enter a number 1 to 7 Menu:\n1 Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exponent\n6. Mean\n7. Quit"));
     }
+
+    /*
+
+    /*for ( ; (intMenuChoice <1) || (intMenuChoice > 7 || (isNaN(intMenuChoice)) ; )*/
 
 for (intMenuChoice <1 || intMenuChoice >7 || isNaN(intMenuChoice)
 {
@@ -27,7 +30,7 @@ if (intMenuChoice ==1)
             floatFirstNum = parseFloat(prompt("Error. Enter your First Number"));
         }
 
-        floatSecondNum = parseFloat(prompt("Please enter your second number."));
+        floatSecondNum = parseFloat(prompt("Please enter your second number"));
 
         for ( ; isNaN(floatSecondNum) ; )
         {
@@ -37,7 +40,6 @@ if (intMenuChoice ==1)
         result = floatFirstNum + floatSecondNum;
 
         $("resultBox").value = result.toFixed(2);
-
 
         calculate_click();
     }
@@ -50,10 +52,9 @@ if(intMenuChoice == 2)
                 floatFirstNum = parseFloat(prompt("Error. Please enter your first number"));
              } 
             floatSecondNum= parseFloat(prompt("Please enter your second number"));
-            for(; isNaN(floatSecondNum); )
+            for (; isNaN(floatSecondNum); )
             {
                 floatSecondNum= parseFloat(prompt("Error. Enter your second number"));
-
             }
 
         result= floatFirstNum - floatSecondNum;
@@ -65,7 +66,7 @@ if(intMenuChoice == 2)
     if(intMenuChoice == 3)
     {
         floatFirstNum = parseFloat(prompt("Enter your first number"));
-        for (;isNaN(floatFirstNum); )
+        for (; isNaN(floatFirstNum); )
         { 
             floatFirstNum = parseFloat(prompt("Error. Please enter your first number"));
 
@@ -84,7 +85,7 @@ if(intMenuChoice == 2)
     if (intMenuChoice ==4)
     {
         floatFirstNum = parseFloat(prompt("Please enter your first number"));
-        for (;isNaN(floatFirstNum); )
+        for (; isNaN(floatFirstNum); )
         {
             floatFirstNum = parseFloat(prompt("Error. Please enter your first number"));
         } 
@@ -140,13 +141,15 @@ if(intMenuChoice == 2)
             {
                 break;
             }
+
+            sum+= parseFloat(numMean);
+            result = sum/(i+1);
         } 
 
-        sum+= parseFloat(numMean);
-        result = sum/(i+1);
-    }
-    $("resultBox").value = result.toFixed(2);
+        $("resultBox").value = result.toFixed(2);
     calculate_click();
+    
+    }
 
 if (intMenuchoice ==7) {
     alert ("Thanks for playing");
@@ -159,5 +162,3 @@ window.onload = function()
 
 };
 
-    
-        
