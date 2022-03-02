@@ -11,7 +11,7 @@ var $ = function(id) {
         var floatExponent;
         var floatBase;
 
-       var intMenuChoice = parseInt(prompt("Please enter a number 1 to 7 Menu:\n1 Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exponent\n6. Mean\n7. Quit"));
+       intMenuChoice = parseInt(prompt("Please enter a number 1 to 7 Menu:\n1 Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exponent\n6. Mean\n7. Quit"));
     }
 
 for (intMenuChoice <1 || intMenuChoice >7 || isNaN(intMenuChoice)
