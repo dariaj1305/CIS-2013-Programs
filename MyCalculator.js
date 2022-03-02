@@ -60,11 +60,6 @@ if(intMenuChoice == 2)
         $("resultBox").value =result.toFixed(2);
         calculate_click ();
      }
-        
-
-        result= floatFirstNum - floatSecondNum;
-        $("resultBox").value =result.toFixed(2);
-        calculate_click ();
      
 
     if(intMenuChoice == 3)
